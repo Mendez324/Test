@@ -1,0 +1,39 @@
+$primary-font: 'Lato', sans-serif;
+
+main {
+    position: relative;
+    z-index: 100;
+}
+
+.separator {
+    display: block;
+    width: 53px;
+    height: 1px;
+    margin: 43px auto;
+    opacity: 0.9;
+    &--clean {
+        background: white !important; 
+        // é de evitar important mas qualquer coisa no 
+        //nth of type estava a mudar me a cor dos separadores para verde e nao consegui descubir porquê.
+        }
+    &--dark {
+        background: black;
+    }
+    
+}
+
+.arrow-left {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0; 
+    height: 0; 
+    background: #e6e6e6 !important;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-right:15px solid rgb(34, 192, 81);
+     
+}
+
+
+

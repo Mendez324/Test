@@ -1,0 +1,61 @@
+.c-welcome {
+    width: 100%;
+    height: 720px;
+    background: white;
+    display: flex;
+    align-items: center;
+    
+    &__side-img-container {
+        width: 50%;
+    }
+
+    &__side-img {
+        width: 100%;
+        height: 720px;
+        object-fit: cover;
+    }
+
+    &__explanation {
+        width: 50%;
+        text-align: center;
+        font-family: $primary-font;
+        background: white;
+        font-weight: 500;
+        max-height: 720px;
+    }
+
+    &__explanation-title {
+        width: 60%;
+        font-size: 40px;
+        margin: 40px auto;
+    }
+
+    &__explanation-text {
+        max-height: 720px;
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 1.5;
+
+    }
+
+
+    &__wc-button {
+        margin: 50px auto;
+        width: 230px;
+        height: 50px;
+        border: 1px solid black;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__wc-button-text {
+        font-family: $primary-font;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}

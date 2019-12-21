@@ -1,0 +1,97 @@
+.c-about {
+    height: 750px;
+    width: 100%;
+    background: url('../img/bghand.png');
+    background-size: cover;
+    
+
+    &__brief {
+        width: 67%;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    &__brief-text-container {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 320px;
+        text-align: center;
+    }
+
+    &__brief-title {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 110px;
+        font-size: 40px;
+        color: white;
+    }
+
+    &__brief-text {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 40px;
+        max-height: 720px;
+        max-width: 80%;
+        font-size: 18px;
+        line-height: 1.7;
+        font-family: $primary-font;
+        color: white;
+    }
+
+    &__cards {
+        //430h - separador
+        height: 430px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__cards-list {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__cards-list-item {
+        margin: 25px;
+        height: 100%;
+        width: 350px;
+        //background: blue;
+    }
+
+    &__cards-item-figure {
+        height: 250px;
+        width: 100%;
+    }
+
+    &__cards-socialnet {
+        height: 100px;
+        border: 1px solid white;
+
+    }
+    &__cards-social-sub {
+        text-align: center;
+        padding: 20px 50px;
+        font-family: $primary-font;
+        font-weight: 600;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+    &__social-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__social-list-item {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        margin: 0 10px;
+    }
+
+}
