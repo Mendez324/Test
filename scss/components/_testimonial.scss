@@ -1,5 +1,4 @@
 .c-testimonial {
-    height: 660px;
     width: 100%;
     display: block;
     background: white;
@@ -8,24 +7,24 @@
         text-align: center;
         margin: 0 auto;
         display: block;
-        width: 67%;
+        width: $container-measure;
         font-family: $primary-font;
     }
 
     &__big-text {
         text-align: center;
         margin: 0 auto;
-        padding-top: 40px;
+        padding-top: 30px;
         max-height: 720px;
         max-width: 80%;
-        font-size: 18px;
+        font-size: $text-size;
         line-height: 1.7;
         color: black;
     }
 
     &__text-bold {
-        padding-top: 92px;
-        font-size: 18px;
+        padding: 92px 0;
+        font-size: $text-size;
         font-weight: 900;
     }
 }

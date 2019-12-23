@@ -1,9 +1,36 @@
+//Ficheiro usado para elementos usados ao longo de toda a pagina,
+//ps.pode ser mais reduzido
 $primary-font: 'Lato', sans-serif;
+$container-measure: 67%;// (1300px x 100) / 1920 = 67%
+$title-size: 40px;
+$text-size: 18px;
 
-main {
-    position: relative;
-    z-index: 100;
+body {
+    font-family: $primary-font ;
+    
+    
 }
+
+//slider arrows
+.slick-prev{
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 15px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+
+}
+.slick-next {
+    width: 0;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 15px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+
 
 .separator {
     display: block;
@@ -21,19 +48,57 @@ main {
     }
     
 }
-
+//Arrows na galeria, right e left 0 , para encostar no tema e na cor.
 .arrow-left {
     position: absolute;
     right: 0;
     top: 50%;
+    transform:translateY(-50%);
     width: 0; 
     height: 0; 
     background: #e6e6e6 !important;
     border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent; 
-    border-right:15px solid rgb(34, 192, 81);
+    border-bottom: 15px solid transparent;
+    &--green {
+        border-right:15px solid rgb(34, 192, 81);
+    } 
+    &--red {
+        border-right:15px solid rgb(219, 56, 56);;
+    }
+
+    &--lightgreen {
+        border-right:15px solid rgb(32, 182, 32);
+    }
+    @include mq (0 , 668px) {
+        display: none;
+    }
+    
      
 }
 
-
+.arrow-right {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform:translateY(-50%);
+    background: #e6e6e6 !important;
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    &--purple {
+        border-left: 15px solid rgb(123, 85, 173);
+    }
+    &--yellow {
+        border-left: 15px solid rgb(255, 157, 0);
+    }
+    &--blue {
+        border-left: 15px solid rgb(49, 76, 194);
+    }
+    @include mq (0 , 668px) {
+        display: none;
+    }
+}
+    
+    
 

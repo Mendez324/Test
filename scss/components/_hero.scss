@@ -12,6 +12,10 @@
         width: 67%;
         margin: 0 auto;
         display: flex;
+        @include mq (0 , 1024px) {
+            height: auto;
+            display: block;
+        }
         
         
     }
@@ -24,8 +28,19 @@
         font-size: 70px;
         color: white;
         :nth-child(2) {
-            font-size: 40px;
+            font-size: $title-size;
             font-weight: 700;
+            @include mq (0 , 667px) {
+                font-size: 30px;
+               
+            }
+        }
+        @include mq (0 , 667px) {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 40px;
+            display: block;
+            width: 100%;
         }
     }
 
@@ -37,11 +52,22 @@
         font-size: 30px;
         color: white;
         text-align: center;
+        @include mq (0 , 1024px) {
+            display: block;
+            width: 100%;
+            font-size: 20px;
+            padding-top: 20px;
+        }
+
     }
 
     &__description-text {
         width: 95%;
         opacity: 0.9;
+        @include mq (0px , 667px) {
+            display: block;
+            width: 100%;
+        }
     }
 
     

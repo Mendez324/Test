@@ -1,6 +1,6 @@
 .c-services {
-    height: 1140px;
     width: 100%;
+    display: block;
     background: white;
     font-family: $primary-font;
 
@@ -15,7 +15,6 @@
     //cada cubo 440px x 320px
 
     &__gallery {
-        display: block;
         width: 100%;
     }
 
@@ -23,7 +22,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        width: 100%;
         :nth-child(2) {
             background: rgb(34, 192, 81);
         }
@@ -42,6 +40,14 @@
         :nth-child(11) {
             background: rgb(49, 76, 194);
         }
+        @include mq (668px , 1024px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+        }
+        @include mq (0 , 668px) {
+            display: block;
+        }
         
     }
 
@@ -55,6 +61,11 @@
             position: relative;
             background:#e6e6e6
         }
+        @include mq (668px , 1024px) {
+           padding: 10px ;
+             
+         }
+        
 
         
     }
@@ -74,8 +85,12 @@
         display: block;
         font-family: $primary-font;
         font-weight: bolder;
-        font-size: 40px;
+        font-size: $title-size;
         color: white;
+        @include mq (668px , 1366px) {
+            font-size: 30px ;
+             
+         }
     }
 
     

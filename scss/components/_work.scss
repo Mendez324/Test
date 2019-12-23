@@ -1,13 +1,12 @@
 .c-works {
     width: 100%;
-    height: 1390px;
     background: #e6e6e6;
     display: flex;
     justify-content: center;
 
 
     &__container {
-        width: 67%;
+        width: $container-measure;
         height: 100%;
         text-align: center;
         font-family: $primary-font;
@@ -17,18 +16,27 @@
 
     &__work-title {
         padding-top: 110px;
-        font-size: 40px;
+        font-size: $title-size;
         
     }
 
+ 
     &__apple {
         position: relative;
         margin: 0 auto;
         width: 85%;
+        @include mq (0 , 668px) {
+            display: none;
+            margin: 0 auto;
+        }
     }
 
     &__imac {
-        width: 100%;
+        width: 85%;
+        margin: 0 auto;
+        @include mq (0 , 668px) {
+            display: none;
+        }
         
     }
 
@@ -36,5 +44,11 @@
        position: absolute;
        left: 0;
        bottom: 0;
-   }
+       @include mq (0 , 668px) {
+        width: 20%;
+        margin: 0 auto;
+       }
+        
+    }
+   
 }
